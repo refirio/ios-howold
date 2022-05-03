@@ -16,14 +16,14 @@ struct AddView: View {
     var body: some View {
         Form {
             HStack {
-                TextField("Name", text: $name)
+                TextField("名前", text: $name)
             }
-            DatePicker("Birthday", selection: $birthday, displayedComponents: .date)
+            DatePicker("誕生日", selection: $birthday, displayedComponents: .date)
             ZStack {
                 if memo.isEmpty {
                     VStack {
                         HStack {
-                            Text("Memo")
+                            Text("メモ")
                                 .padding(EdgeInsets(
                                     top: 8,
                                     leading: 0,
@@ -67,12 +67,12 @@ struct AddView: View {
                 HStack {
                     Spacer()
                     Image(systemName: "checkmark.square")
-                    Text("ADD")
+                    Text("追加")
                     Spacer()
                 }
             }
         }
-        .navigationTitle("ADD")
+        .navigationTitle("追加")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             // 初期値を20年前の日付に変更

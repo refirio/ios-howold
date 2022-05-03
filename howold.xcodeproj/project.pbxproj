@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0318DEC627CB2DBF0008710D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		037E37A227C606CE00F95A45 /* howold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E37A527C606CE00F95A45 /* howoldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howoldApp.swift; sourceTree = "<group>"; };
 		037E37A727C606CE00F95A45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		037E37A427C606CE00F95A45 /* howold */ = {
 			isa = PBXGroup;
 			children = (
+				0318DEC627CB2DBF0008710D /* Info.plist */,
 				037E37A527C606CE00F95A45 /* howoldApp.swift */,
 				037E37A727C606CE00F95A45 /* ContentView.swift */,
 				037E37CF27C6196A00F95A45 /* common.swift */,
@@ -434,6 +436,7 @@
 				DEVELOPMENT_TEAM = HEZ8494358;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = howold/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,7 +451,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,6 +466,7 @@
 				DEVELOPMENT_TEAM = HEZ8494358;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = howold/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -477,7 +481,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

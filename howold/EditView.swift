@@ -18,16 +18,16 @@ struct EditView: View {
 
     var body: some View {
         Form {
-            Section(header: Text("Input")) {
+            Section(header: Text("入力")) {
                 HStack {
-                    TextField("Name", text: $name)
+                    TextField("名前", text: $name)
                 }
-                DatePicker("Birthday", selection: $birthday, displayedComponents: .date)
+                DatePicker("誕生日", selection: $birthday, displayedComponents: .date)
                 ZStack {
                     if memo.isEmpty {
                         VStack {
                             HStack {
-                                Text("Memo")
+                                Text("メモ")
                                     .padding(EdgeInsets(
                                         top: 8,
                                         leading: 0,
@@ -75,12 +75,12 @@ struct EditView: View {
                     HStack {
                         Spacer()
                         Image(systemName: "checkmark.square")
-                        Text("EDIT")
+                        Text("編集")
                         Spacer()
                     }
                 }
             }
-            Section(header: Text("View")) {
+            Section(header: Text("表示")) {
                 HStack {
                     Text("満年齢")
                     Spacer()
@@ -103,7 +103,7 @@ struct EditView: View {
                 }
             }
         }
-        .navigationTitle("EDIT")
+        .navigationTitle("編集")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             let persons = loadPersons()
